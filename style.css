@@ -1,0 +1,35 @@
+/* @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"); */
+
+body::before{
+    display: block;
+    content: '';
+    height: 60px;
+}
+
+/* Portfolio */
+
+.portfolio-overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(17, 36, 90, 0.9);
+    display: flex;
+    align-items: flex-end;
+    padding: 30px;
+    opacity: 0;
+}
+
+.portfolio-item:hover .portfolio-overlay{
+    opacity: 1;
+}
+
+.portfolio-item:hover img{
+    transform: scale(1.1);
+} 
+
+.portfolio-item img,
+.portfolio-item .portfolio-overlay{
+    transition: all 04s ease;
+}
